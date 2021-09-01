@@ -193,15 +193,15 @@ async function roomLeave(msg){
   console.log(msg);
 }
 async function roomJoin(msg){
-  console.log("room-leave");
+  console.log("room-join");
   console.log(msg);
 }
 async function roomTopic(msg){
-  console.log("room-leave");
+  console.log("room-topic");
   console.log(msg);
 }
 async function roomInvite(msg){
-  console.log("room-leave");
+  console.log("room-invite");
   console.log(msg);
 }
 bot.on('scan', onScan);
