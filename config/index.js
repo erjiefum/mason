@@ -5,7 +5,7 @@ module.exports = {
     NICKNAME: '马月半', //女朋友昵称
     MEMORIAL_DAY: '2015/04/18', //你和女朋友的纪念日
     CITY: '上海', //女朋友所在城市（城市名称，不要带“市”）
-    SENDDATE: '30 10 7 * * *', //定时发送时间 每天8点06分0秒发送，规则见 /schedule/index.js
+    SENDDATE: '50 37 9 * * *', //定时发送时间 每天8点06分0秒发送，规则见 /schedule/index.js
     TXAPIKEY: 'b28c474ffc8ea143b42b45c66c72f907', //此处须填写个人申请的天行apikey,请替换成自己的 申请地址https://www.tianapi.com/signup.html?source=474284281
     ROOMNAME: '/^同福客栈老白涮肉坊/i',
     // 高级功能配置项（非必填项）

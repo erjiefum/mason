@@ -8,12 +8,13 @@ let getNewDate = () => {
   let day = thisTime.getDate();
   return year + "-" + month + "-" + day;
 }
-
+console.log(getNewDate());
 let postNews = (callback) => {
   fs.readFile(path.join(__dirname, "../chat_record/todayNews."+getNewDate()+".txt"),"utf-8",(err,data) => {
     if(err){
         console.log("error", err);
     }else{
+      console.log(data);
         callback(data);
     }
   });

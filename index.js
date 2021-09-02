@@ -166,7 +166,7 @@ async function initDay() {
     let contact =
       (await bot.Contact.find({ name: config.NICKNAME })) ||
       (await bot.Contact.find({ alias: config.NAME })); // 获取你要发送的联系人
-    let news = postNews(async news => {
+    postNews(async news => {
       console.log(news);
       try {
         await delay(2000);
