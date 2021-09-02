@@ -25,11 +25,17 @@ bot
   console.log(`${alias}: ${content} `);
   if(content=="test"){
     let targetRoom = await bot.Room.find({topic: content});
-    targetRoom.add(contact);
+    await targetRoom.add(contact);
   }
   if(room&&content=="退群"){
     let targetRoom = await bot.Room.find({topic: 'test'});
-    targetRoom.remove(contact);
+    console.log(targetRoom)
+    let memberIdList = targetRoom.payload.memberIdList;
+    memberIdList.forEach(async item => {
+      console.dir(await bot.Contact.find({id:item}))
+    })
+    // await targetRoom.say(JSON.stringify(targetRoom));
+    
   }
 })
 .on("room-join",(msg) => {
